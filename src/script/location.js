@@ -16,7 +16,7 @@ require(['config'], function () {
                 localAll.show();
                 $.ajax({
                     type: 'get',
-                    url: 'http://10.31.155.20/secondStudy/taobao/new-taobao//taobao/php/location.php',
+                    url: 'http://10.31.155.20/secondStudy/taobao/taobao/php/location.php',
                     async: true,
                     dataType: 'json',
                 }).done(function (data) {

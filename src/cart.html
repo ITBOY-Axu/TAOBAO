@@ -27,6 +27,7 @@
             src: url(./iconfont/font_403341_n8tj33yn5peng66r.woff) format('woff');
         }
     </style>
+    <script src="script/require.js" defer async="true" data-main="script/cart.js"></script>
 </head>
 
 <body>
@@ -274,220 +275,14 @@
                 <!-- 每一条渲染出来的商品信息 -->
                 <li class="shopItem">
                     <!-- 商品信息的头部 -->
-                    <div class="shopItem-top">
-                        <!-- 复选框 -->
-                        <input type="checkbox" name="" id="">
-                        <!-- 空格 -->
-                        &nbsp;&nbsp;
-                        <!-- 天猫店铺的精灵图 -->
-                        <span class="icon-tianmao"></span>
-                        店铺：<a href="">淘宝旗舰店</a>
-                        <!-- 旺旺的图标 -->
-                        <span class="wangwang"></span>
-                    </div>
+
                     <!-- 商品信息的底部    同一个店铺要渲染的东西-->
-                    <ul class="shopItem-under">
-                        <!-- 左边的复选框 -->
-                        <li class="under-checkbox">
-                            <input type="checkbox">
-                        </li>
-                        <!-- 右边的商品部分 -->
-                        <li class="shopmessage">
-                            <!-- 左边的商品图 -->
-                            <div class="message-img">
-                                <a href="">
-                                    <img src="../src/img/messa.jpg" alt="">
-                                </a>
-                            </div>
-
-                            <!-- 右边的商品的详情 -->
-                            <div class="messagefont">
-                                <!-- 上面的文字 -->
-                                <a href="">搬家神器收纳袋子帆布手提蛇皮编织打包行李袋超大容量麻袋特大号</a>
-                            </div>
-
-                            <!-- 下面的商品小图标 -->
-                            <div class="message-log">
-                                <span>
-                                    <a href="">
-                                        <img src="../src/img/smlog.png" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="../src/img/smlog.png" alt="">
-                                    </a>
-                                </span>
-                            </div>
-                        </li>
-                        <!-- 中间的商品   介绍 -->
-                        <li class="shopcenter">
-                            <div class="shopcenter-font">
-                                <p class="shopcenter-line">颜色分类：黑色（125升）加固</p>
-                            </div>
-                        </li>
-
-                        <!-- 商品   产品优惠价格 -->
-                        <li class="sall-price">
-                            <!-- 之前价格 -->
-                            <p class="before">￥31.70</p>
-                            <!-- 最新价格 -->
-                            <p class="now">￥20.00</p>
-                        </li>
-
-                        <!-- 商品添加数量的按钮 -->
-                        <li class="addnum-but">
-                            <a href="#" class="jian">-</a><input type="text" value="2" class="amount"><a href="#"
-                                class="jia">+</a>
-                        </li>
-
-                        <!-- 商品的总价格 -->
-                        <li class="priceall">
-                            <p>￥30.00</p>
-                        </li>
-
-                        <!-- 商品的操作部分 -->
-                        <li class="shop-delet">
-                            <a href="">移入收藏夹</a>
-                            <a href="">删除</a>
-                        </li>
-                    </ul>
-
-                      <!-- 商品信息的底部    同一个店铺要渲染的东西-->
-                      <ul class="shopItem-under">
-                            <!-- 左边的复选框 -->
-                            <li class="under-checkbox">
-                                <input type="checkbox">
-                            </li>
-                            <!-- 右边的商品部分 -->
-                            <li class="shopmessage">
-                                <!-- 左边的商品图 -->
-                                <div class="message-img">
-                                    <a href="">
-                                        <img src="../src/img/messa.jpg" alt="">
-                                    </a>
-                                </div>
-    
-                                <!-- 右边的商品的详情 -->
-                                <div class="messagefont">
-                                    <!-- 上面的文字 -->
-                                    <a href="">搬家神器收纳袋子帆布手提蛇皮编织打包行李袋超大容量麻袋特大号</a>
-                                </div>
-    
-                                <!-- 下面的商品小图标 -->
-                                <div class="message-log">
-                                    <span>
-                                        <a href="">
-                                            <img src="../src/img/smlog.png" alt="">
-                                        </a>
-                                        <a href="">
-                                            <img src="../src/img/smlog.png" alt="">
-                                        </a>
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- 中间的商品   介绍 -->
-                            <li class="shopcenter">
-                                <div class="shopcenter-font">
-                                    <p class="shopcenter-line">颜色分类：黑色（125升）加固</p>
-                                </div>
-                            </li>
-    
-                            <!-- 商品   产品优惠价格 -->
-                            <li class="sall-price">
-                                <!-- 之前价格 -->
-                                <p class="before">￥31.70</p>
-                                <!-- 最新价格 -->
-                                <p class="now">￥20.00</p>
-                            </li>
-    
-                            <!-- 商品添加数量的按钮 -->
-                            <li class="addnum-but">
-                                <a href="#" class="jian">-</a><input type="text" value="2" class="amount"><a href="#"
-                                    class="jia">+</a>
-                            </li>
-    
-                            <!-- 商品的总价格 -->
-                            <li class="priceall">
-                                <p>￥30.00</p>
-                            </li>
-    
-                            <!-- 商品的操作部分 -->
-                            <li class="shop-delet">
-                                <a href="">移入收藏夹</a>
-                                <a href="">删除</a>
-                            </li>
-                        </ul>
-                        
-
-
-                          <!-- 商品信息的底部    同一个店铺要渲染的东西-->
-                    <ul class="shopItem-under">
-                            <!-- 左边的复选框 -->
-                            <li class="under-checkbox">
-                                <input type="checkbox">
-                            </li>
-                            <!-- 右边的商品部分 -->
-                            <li class="shopmessage">
-                                <!-- 左边的商品图 -->
-                                <div class="message-img">
-                                    <a href="">
-                                        <img src="../src/img/messa.jpg" alt="">
-                                    </a>
-                                </div>
-    
-                                <!-- 右边的商品的详情 -->
-                                <div class="messagefont">
-                                    <!-- 上面的文字 -->
-                                    <a href="">搬家神器收纳袋子帆布手提蛇皮编织打包行李袋超大容量麻袋特大号</a>
-                                </div>
-    
-                                <!-- 下面的商品小图标 -->
-                                <div class="message-log">
-                                    <span>
-                                        <a href="">
-                                            <img src="../src/img/smlog.png" alt="">
-                                        </a>
-                                        <a href="">
-                                            <img src="../src/img/smlog.png" alt="">
-                                        </a>
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- 中间的商品   介绍 -->
-                            <li class="shopcenter">
-                                <div class="shopcenter-font">
-                                    <p class="shopcenter-line">颜色分类：黑色（125升）加固</p>
-                                </div>
-                            </li>
-    
-                            <!-- 商品   产品优惠价格 -->
-                            <li class="sall-price">
-                                <!-- 之前价格 -->
-                                <p class="before">￥31.70</p>
-                                <!-- 最新价格 -->
-                                <p class="now">￥20.00</p>
-                            </li>
-    
-                            <!-- 商品添加数量的按钮 -->
-                            <li class="addnum-but">
-                                <a href="#" class="jian">-</a><input type="text" value="2" class="amount"><a href="#"
-                                    class="jia">+</a>
-                            </li>
-    
-                            <!-- 商品的总价格 -->
-                            <li class="priceall">
-                                <p>￥30.00</p>
-                            </li>
-    
-                            <!-- 商品的操作部分 -->
-                            <li class="shop-delet">
-                                <a href="">移入收藏夹</a>
-                                <a href="">删除</a>
-                            </li>
-                        </ul>
+                    
+          
                 </li>
             </ul>
 
-            
+
 
 
 
@@ -522,7 +317,7 @@
 
                     <!-- 结算按钮 -->
                     <div class=" buy">
-                            <a href=""><span>结算</span> </a>
+                        <a href=""><span>结算</span> </a>
                     </div>
                 </li>
             </ul>

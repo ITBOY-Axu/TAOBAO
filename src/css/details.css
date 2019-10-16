@@ -203,7 +203,12 @@ section{
 .bannerLeft-imgs{
     margin-bottom: 18px;
     width: 400px;
+    position: relative;
     /* overflow: hidden; */
+}
+
+.bannerLeft-smallimgs{
+    overflow: hidden;
 }
 /* <!-- 图片里  最大的图片 放大镜用   小放的图 --> */
 .imgs-sf{
@@ -212,6 +217,38 @@ section{
     overflow: hidden;
     position: relative;
     margin-bottom: 15px;
+    text-align: center;
+}
+.imgs-sf a{
+    display: block;
+    position: relative;
+    cursor: crosshair;
+}
+.imgs-sf img{
+    /* width: 350px;
+    height: 350px; */
+}
+.sf{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9c9c9c;
+    opacity: 0.5;
+}
+.imgs-gf{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 410px;
+    top:0;
+    overflow: hidden;
+    z-index: 20;
+   /* display: none; */
+}
+.imgs-gf img{
+    position: absolute;
+    width: 700px;
+    height: 700px;
 }
 
 /* <!-- 详情页的主要板块    左边部分   照片详细部分  下面的小图 ul里面好几个小图  需要渲染--> */
@@ -429,6 +466,9 @@ margin-top: 3px;
     text-align: center;
     border: 1px solid #DCDCDC;
 }
+.sizeAll li a:hover{
+    border: 1px solid #f40;
+}
 /* <!-- 颜色部分 --> */
 /* 样式跟尺寸那边的LI一样  直接套用 */
 .color{
@@ -439,10 +479,14 @@ display: block;
 line-height: 32px;
 width: 32px;
 height: 32px;
-border: 2px solid #F40;
-background: url(../img/small1.jpg) no-repeat center;
+border: 2px solid #DCDCDC;
+
 padding: 0;
 }
+.colorAll li a:hover{
+    border: 2px solid #F40;
+}
+
 /* <!-- 商品数量添加部分 --> */
 .Number{
     border: 0;

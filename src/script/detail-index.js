@@ -1,0 +1,1 @@
+require(['detail','banner-effect']);

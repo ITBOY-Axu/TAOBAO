@@ -1,16 +1,16 @@
 require(['config'], function () {
     require(['jquery', 'haohuo'], function () {
 
-
-
+        
+        
 
         $.ajax({
             type: 'get',
-            url: 'http://10.31.155.20/secondStudy/taobao/new-taobao/taobao/php/item.php',
+            url: 'http://10.31.155.20/secondStudy/taobao/taobao/php/item.php',
             async: true,
             dataType: 'json',
         }).done(function (data) {
-            console.log(data)
+          
             let bannerimg = '';//轮播图的渲染
             for (let d = 0; d < 5; d++) {
                 bannerimg += `<img src=" ${data[d].banner} " alt="" >`

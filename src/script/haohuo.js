@@ -17,7 +17,7 @@ require(['config'], function () {
 
             $.ajax({
                 type: 'get',
-                url: 'http://10.31.155.20/secondStudy/taobao/new-taobao/taobao/php/item.php',
+                url: 'http://10.31.155.20/secondStudy/taobao/taobao/php/item.php',
                 async: true,
                 dataType: 'json',
             }).done(function (data) {
@@ -31,19 +31,22 @@ require(['config'], function () {
                 let secondimg = '';//二级菜单的图片
                 let underall = ''; //二级菜单底部的图片
                 let undersmall = '';//二级菜单底部的图片 小图片
-                $.each(data, function (index, value) {
-                    str = ` <a herf="javascript:;" class="left-underimg">
-                    <img src="${value.url}"> 
-                    <div class="info">
-                    <h4 class="a-all">${value.i}</h4>
-                    <p>${value.span}<p>
-                    <span class="tb-ifont"> ${value.pinlin}</span>
-                    </div>
-                    </a>
-                    `
-                    shopleftunder.append(str);
 
-                })
+
+
+                for (let shop = 0; shop < 6; shop++) {
+                    str = ` <a herf="javascript:;" class="left-underimg">
+                <img src="${data[shop].url}"> 
+                <div class="info">
+                <h4 class="a-all">${data[shop].i}</h4>
+                <p>${data[shop].span}<p>
+                <span class="tb-ifont"> ${data[shop].pinlin}</span>
+                </div>
+                </a>
+                `
+                    shopleftunder.append(str);
+                }
+
 
                 for (let i = 0; i < 3; i++) {
                     item += `<li><img src="${data[i].url}">
@@ -58,8 +61,8 @@ require(['config'], function () {
                        <span class="letter">已抢${data[i].sale}件</span>
                    </div>
                    <div class="shoptime-price">
-                       <span class="now">${data[i].price}</span>
-                       <span class="before">${data[i].beprice}</span>
+                       <span class="now">￥${data[i].price}</span>
+                       <span class="before">￥${data[i].beprice}</span>
                    </div>
                </div></li>
                    `
@@ -67,7 +70,7 @@ require(['config'], function () {
                 shoptimeunder.append(item);
 
 
-                for (let a = 0; a < 8; a++) {
+                for (let a = 0; a < 4; a++) {
 
                     every += `<li>
                     <a href="javascript:;">
@@ -87,7 +90,7 @@ require(['config'], function () {
                 }
                 everyunder.append(every);
 
-                for (let b = 0; b < 6; b++) {
+                for (let b = 0; b < 3; b++) {
                     fashion += `
                     <li>
                     <p class="fashion-font">
@@ -103,39 +106,43 @@ require(['config'], function () {
                 }
                 fashionleft.append(fashion);
 
+
+
+
+
                 $.each(data, function (index, value) {
                     hot += ` <li>
             
-                    <a href="javascript:;" class="hotimg"> <img src="${value.url}" alt=""></a>
+                    <a href="details.html?sid=${value.sid}" target="_blank" class="hotimg"> <img src="${value.url}" alt=""></a>
                    
                     <a href="javascript:;" class="hotline"><img src="../src/img/baoyou.png" alt="">
                        ${value.p}  </a>
                     <a href="" class="hotline-1"><span>评价</span><span>${value.pingjia} </span><span>收藏</span><span>${value.shoucang}</span></a>
                     <p class="hotline-2">
 
-                        <a href="javascript:;" class="price"><span  class="Price1">${value.price}</span><span class="Price2">${value.beprice}</span></a>
+                        <a href="javascript:;" class="price"><span  class="Price1">￥${value.price}</span><span class="Price2">￥${value.beprice}</span></a>
                         <a href="javascript:;" class="sell"><span>月销${value.sale}笔</span></a></p>
                 </li>`
-                    hotshop.append(hot);
+
                 })
+                hotshop.append(hot);
 
 
 
 
 
 
-
-
-                $.each(data, function (index, value) {
+                for (let p = 0; p < 18; p++) {
                     second += `
             
-                                        <a href="javascript:;">${value.clothes}</a>
-                                     
-                        `
+                    <a href="javascript:;">${data[p].clothes}</a>
+                 
+    `
                     // console.log(second);
                     // console.log(mainlefttop);
-                    mainlefttop.append(second);
-                })
+                  
+                }
+                mainlefttop.append(second);
 
 
                 for (let c = 0; c < 6; c++) {
@@ -148,26 +155,34 @@ require(['config'], function () {
                 // console.log(secondimg);
                 mainright.append(secondimg);
 
-               for(let d=0;d<6;d++) {
+                for (let d = 0; d < 6; d++) {
 
                     underall += ` <a> <img src="${data[d].bannersmall}"
                     alt=""></a> <a><img src="${data[d].bannersmall}"
                     alt=""></a> `
-                   
+
                     // Imgsunderimgs.append(underall);
                 }
                 Imgsunderimgs.html(underall);
 
-                for (let e=0;e<5;e++){
-                    undersmall+=`<li><a>
+                for (let e = 0; e < 5; e++) {
+                    undersmall += `<li><a>
                     <img src="${data[e].underbanner}"></a><a>
                     <img src="${data[e].underbanner}"></a>
                     </li>`
                 }
                 imgsunderAll.append(undersmall);
+
+
+
+                console.log(1);
+
+
+
+                
             })
 
-
+          
         })()
 
 

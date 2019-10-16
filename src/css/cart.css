@@ -354,37 +354,7 @@ section{
         /* padding-bottom: 15px; */
     }
     /* <!-- 商品信息的头部 --> */
-    .shopItem-top{
-        height: 38px;
-        background: #fff;
-        overflow: hidden;
-        position: relative;
-        padding-left: 15px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-bottom: 0;
-    }
-    /*    <!-- 复选框 --> */
-    .shopItem-top input{
-        margin-left: 5px;
-    }
-    /* <!-- 天猫店铺的精灵图 --> */
-    .icon-tianmao{
-        display: inline-block;
-        vertical-align: middle;
-        margin: -3px 6px 0 0;
-        width: 16px;
-        height: 16px;
-        background: url(../img/sp1.png) no-repeat -20px -105px;
-    }
-    /* <!-- 旺旺的图标 --> */
-    .wangwang{
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 15px;
-        background:url(../img/sprti2.gif) no-repeat -80px 0;
-    }
+    
 
 
     /* <!-- 商品信息的底部 --> */
@@ -400,6 +370,7 @@ section{
         width: 50px;
         height: 119px;
         padding-bottom: 10px;
+        
     }
     .under-checkbox input {
         /* width: 15px;

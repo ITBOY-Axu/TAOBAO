@@ -27,6 +27,7 @@
             src: url(./iconfont/font_403341_n8tj33yn5peng66r.woff) format('woff');
         }
     </style>
+    <script src="script/require.js" defer async="true" data-main="script/detail-index.js"></script>
 </head>
 
 <body>
@@ -205,101 +206,13 @@
         <!-- 详情页的主要板块    左边部分-->
         <div class="banner-left">
             <!-- 详情页的主要板块    左边部分   上面的图片详情部分-->
-            <div class="bannerLeft-imgs">
-                <!-- 图片里  最大的图片 放大镜用   小放的图 -->
-                <div class="imgs-sf">
-                    <a href="">
-                        <!-- 小放的图片 -->
-                        <img src="../src/img/sf1.jpg" alt="">
-                        <!-- 小放大镜 -->
-                        <div class="sf"></div>
-                    </a>
-                    <!-- 大放的图片 -->
-                    <div class="imgs-gf">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
+           
             <!-- 详情页的主要板块    左边部分   照片详细部分  下面的小图 ul里面好几个小图  需要渲染-->
-            <ul class="bannerLeft-smallimgs">
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-                <li> <img src="../src/img/sf1.jpg" alt=""></li>
-            </ul>
+         
         </div>
         <!-- 详情页的主要板块    中间部分-->
         <div class="banner-middle">
-            <!-- 中间部分的上面      标题 部分 -->
-            <div class="middle-Top">
-                <h3>
-                    <span>代购</span>
-                    Balenciaga 巴黎世家T恤彩虹可乐麦穗BB刺绣字母休闲男女宽松短袖
-                </h3>
-                <p>举报</p>
-            </div>
-            <!-- 中间部分的上面      价格 部分 -->
-            <ul class="price">
-                <li class="price-cancel"> <span>
-                        价格
-                    </span>
-                    <em>￥3890.00</em>
-                </li>
-                <!-- 中间部分的上面      价格 部分    右边的累积评论-->
-                <li class="pinlun">
-                    <div class="pinlun-left"><a href="">
-                            <span class="number">156</span>
-                            <span>累计评论</span>
-                        </a></div>
-                    <div class="pinlun-right">
-                        <a href="">
-                            <span class="number">122</span>
-                            <span>交易成功</span>
-                        </a>
-                    </div>
-                </li>
-                <!-- 中间部分的上面      价格 部分    淘宝目前价格部分-->
-                <li class="taobao-price">
-                    <span class="price-style">淘宝价</span>
-                    <div class="now-price   ">
-                        <!-- 人民币符号 -->
-                        <strong class="tb-promo-price"><em class="tb-rmb">¥</em><em
-                                class="tb-rmb-num">229.00</em></strong><span class="tb-promo-type">淘宝女装价</span>
-                    </div>
-                </li>
-                <!-- 中间部分的上面      价格 部分    优惠部分部分-->
-                <li class=taobao-sell>
-                    <span class="tb-sell-type">优惠</span>
-                    <div class="tb-sell-price">
-                        <i></i>
-                        <span>淘金币可抵4.8元</span>
-                    </div>
-                </li>
-                <!-- 中间部分的上面      价格 部分  配送部分-->
-                <li class="taobao-song">
-                    <span class="tb-sell-type">配送</span>
-                    <!-- 配送地区 -->
-                    <div class="tb-sell-price">
-                        <span>浙江杭州至</span>
-                        <div class="tb-sell-local">
-                            浙江杭州
-                            <ul></ul>
-                        </div>
-                        <span>快递</span>
-                        <div class="tb-sell-kuai">
-                            免运费
-                            <ul></ul>
-                        </div>
-                        <span>48小时内发货</span>
-                    </div>
-                </li>
-            </ul>
+
             <!-- 中间部分的上面      下面尺码库存部分 -->
             <ul class="middle-under">
                 <!-- 尺码部分 -->
@@ -318,13 +231,13 @@
                     <span class="tb-sell-type">颜色分类</span>
                     <ul class="sizeAll colorAll">
                         <li class="colorAllLi">
-                            <a href=""></a>
+                            <a href="">红色</a>
                         </li>
                         <li class="colorAllLi">
-                            <a href=""></a>
+                            <a href="">蓝色</a>
                         </li>
                         <li class="colorAllLi">
-                            <a href=""></a>
+                            <a href="">黑色</a>
                         </li>
                     </ul>
                 </li>
@@ -333,9 +246,9 @@
                     <span class="tb-sell-type">数量</span>
                     <div class="sizeAll NumberAll">
                         <!-- 加减  添加数量 -->
-                        <span> <a href="" class="change">－</a><input type="text" value="1"><a href=""
-                                class="change">＋</a></span>
-                        <em> 件库存（660件）</em>
+                        <span> <a href="javascirpt:;" class="change   leftchange">－</a><input type="text" value="1"  class="sumbutton"><a href="javascirpt:;"
+                                class="change  rightchange">＋</a></span>
+                    
 
                     </div>
                 </li>
@@ -343,11 +256,11 @@
                 <li class="Car size">
                     <!-- 立即购买 -->
                     <div class="buy">
-                        <a href="">立即购买</a>
+                        <a href="http://10.31.155.20/secondStudy/taobao/taobao/src/cart.html">立即购买</a>
                     </div>
                     <!-- 加入购物车 -->
                     <div class="shopcar">
-                        <a href="">加入购物车</a>
+                        <a href="javascirpt:;">加入购物车</a>
                     </div>
                 </li>
             </ul>
@@ -358,7 +271,7 @@
             <!--    详情页的主要板块    右边部分  上面部分 -->
             <div class="bannerRight-top">
                 <!-- 上面的金牌卖家部分 -->
-                <a href="" class="Right-toplog">
+                <a href="javascirpt:;" class="Right-toplog">
                     <img src="../src/img/jinpai.png" alt="">
                     <img src="../src/img/jinpai2.png" alt="">
                 </a>
