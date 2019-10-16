@@ -1,0 +1,354 @@
+body{
+    font-family: tahoma,\5FAE\8F6F\96C5\9ED1;
+}
+/* <!-- 最顶部的登入注册部分 --> */
+header {
+    z-index: 10000;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee
+}
+/* <!--登入注册的版心区域 --> */
+.top-mainbox {
+    margin: 0 auto;
+    width: 1190px;
+    height: 35px;
+    background: #f5f5f5
+}
+/* <!-- 版心区域的左边登入注册部分 --> */
+.leftLocal {
+    z-index: 10002
+}
+
+.localName {
+    float: left;
+    margin-left: 7px;
+    color: #3c3c3c;
+    line-height: 35px;
+    margin-right: 7px
+}
+/* <!-- 地区的下标图标 --> */
+.logBox {
+    display: block;
+    float: left;
+    width: 12px;
+    height: 6px;
+    line-height: 6px;
+    overflow: hidden;
+    margin-top: 16px
+}
+/* <!-- 小图标 --> */
+.localLog {
+    color: #9c9c9c;
+    display: block;
+    margin-top: -4px;
+    margin-right: 20px
+}
+/* <!-- 需要PHP渲染的下拉地区块 --> */
+.localAll {
+    padding: 8px 0;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    border: 1px solid #eee;
+    background: #fff;
+    max-height: 270px;
+    overflow-y: scroll;
+    display: none
+}
+
+header a {
+    float: left;
+    margin-right: 7px;
+    font-size: 12px;
+    color: #6c6c6c;
+    text-decoration: none!important
+}
+
+header a:hover {
+    color: #f22e00
+}
+
+.login {
+    color: #f22e00
+}
+/* <!-- 顶部的右边部分 --> */
+.mainbox-right {
+    float: right
+}
+/* <!-- 右边的第一个部分  我的淘宝 --> */
+.myTaobao-under {
+    width: 80px
+}
+/* <!-- 商品分类旁边的斜杆 --> */
+.smallLog {
+    padding: 0 5px;
+    font-style: normal;
+    color: #ddd
+}
+/* <!-- 网站导航的下拉菜单 --> */
+.leader-under {
+    width: 1190px;
+    position: absolute;
+    top: 35px;
+    left: -1103px;
+    display: none
+}
+
+h4 {
+    color: #f22e00
+}
+/* <!-- 4块区域 每块区域的主内容部分  需要渲染 --> */
+.leader-main li {
+    padding-top: 5px;
+    height: 25px;
+    float: left;
+    overflow: hidden;
+    width: 24%
+}
+
+.leader-main li a {
+    position: relative;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 2px;
+    padding: 0 8px;
+    border-radius: 2px;
+    color: #3c3c3c
+}
+/* <!-- 版心上面的小区域 --> */
+.taobaotop{
+    width: 100%;
+    height: 42px;
+    padding: 13px 0;
+}
+.taobaotop-center{
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+}
+.taobaotop-center h2{
+    width: 151px;
+    padding: 5px 30px 5px 0;
+    border-right: 1px solid #e6e6e6;
+    margin-right: 30px;
+    height: 100%;
+    float: left;
+}
+.taobaotop-center h2 a{
+    display:inline-block;
+}
+.taobaotop-center p{
+    width: 90px;
+    height: 40px;
+    /* display: inline-block; */
+    float: left;
+    font: 18px/40px normal;
+    color: #9c9c9c;
+}
+/* <!-- 版心banner部分 --> */
+section{
+    width: 100%;
+    height: 553px;
+    position: relative;
+}
+.banner-background{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/login.jpg) no-repeat;
+}
+/* <!-- 登入注册部分 --> */
+.registerbox{
+    left: 50%;
+    margin-left: 115px;
+    position: absolute;
+    top: 0;
+    width: 378px;
+    height: 530px;
+    margin-top: 12px;
+    background: #fff;
+    box-sizing: border-box;
+}
+/* <!-- 上面的登入注册的两个切换按钮 --> */
+.register-tab{
+    border-bottom: 1px solid #f3f3f3;
+    margin: 24px 15px 0 15px;
+    width: 348px;
+    height: 40px;
+}
+.register-tab li{
+
+
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 123px;
+}
+.register-tab a{
+    color: #e6e6e6;
+    font-weight: 700;
+}
+/* <!-- 登入 --> */
+.tab-login{
+background: #333;
+margin-left: 53px;
+ margin-right: 5px;
+}
+/* <!-- 注册 --> */
+.tab-register{
+background: #f3f3f3;
+}
+.tab-register a{
+   
+    color: #333;
+}
+/* <!-- 登入注册下面的inpunt按钮 --> */
+.register-under{
+    width: 338px;
+    height: 397px;
+    padding: 30px 0 0 10px;
+    margin: 0 15px;
+}
+/* <!-- 第一个input手机框 --> */
+ .input{
+    width: 330px;
+    height: 66px;
+    padding-left: 8px;
+}
+.inputall{
+    border: 1px solid #e3e2e2;
+    box-sizing: border-box;
+    height: 38px;
+    margin: 0;
+    /* border: 1px solid rgb(51, 51, 51); */
+}
+.inputall label{
+    font-size: 12px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px;
+    text-align: left;
+    width: 65px;
+    display: block;
+    font-weight: 700;
+    float: left;
+}
+.inputall input{
+    outline: none;
+    border: 0;
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+    width: 253px;
+}
+/* <!-- 错误信息提示 --> */
+.erro{
+    width: 330px;
+    height: 28px;
+    float: left;
+}
+.erro span{
+    display: inline-block;
+    display: none;
+    width: 20px;
+    height: 28px;
+    background: url(../img/sprite4success.png)no-repeat -183px -91px;
+}
+/* <!-- 第二个input验证码 --> */
+.input-yz{
+    overflow: hidden;
+}
+/* 验证码的输入框小点 */
+.yz{
+    width: 198px;
+    height: 36px;
+    float: left;
+    overflow: hidden;
+}
+.yz input{
+width: 121px;
+height: 33px;
+}
+/* <!-- 验证码的框 --> */
+.yzm{
+    width: 110px;
+    height: 36px;
+    margin-right: 17px;
+    float: left;
+    overflow: hidden;
+    line-height: 36px;
+        text-indent: 30px;
+        font-size: 18px;
+}
+/* <!-- 第三个Input  短信 --> */
+.message{
+    width: 330px;
+    float: left;
+}
+.message label{
+    width: 60px;
+}
+.message input{
+    width: 230px;
+    float: left;
+}
+/* <!-- 第四个input密码--> */
+.secrt label{
+    width: 40px;
+}
+.secrt input{
+    width:270px;
+}
+/* <!-- 获取短信的按钮 --> */
+.messagebutton{
+    width: 78px;
+    height: 38px;
+    margin-left: 10px;
+    float: left;
+    overflow: hidden;
+}
+.messagebutton a{
+    background: #323232;
+    color: #fff;
+    line-height: 38px;
+    margin-right: 17px;
+    text-align: center;
+    width: 73px;
+    display: block;
+}
+
+
+/* <!-- 阅读协议 --> */
+.read{
+    width: 330px;
+    height: 20px;
+    text-align: center;
+    padding-left: 8px;
+    color: #9c9c9c;
+}
+.read input{
+    margin-top: 2px;
+    vertical-align: middle;
+}
+/* <!-- 同意并注册按钮 --> */
+.success{
+    margin-top: 20px;
+    width: 338px;
+    height: 40px;
+}
+.success a input{
+    background: #000;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    width: 312px;
+    cursor: pointer;
+    font-family: tahoma,\5FAE\8F6F\96C5\9ED1;
+}

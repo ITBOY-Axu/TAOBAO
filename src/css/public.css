@@ -1,0 +1,60 @@
+/* 登入注册部分  需要php渲染的下拉的区域 */
+.localAllActive{
+    width: 242px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 8px;
+    cursor: pointer;
+    /* 点击触发的颜色 */
+    /* background-color: #f4f4f4; */
+}
+/* 顶部的Li样式 */
+.topLi{
+    float: left;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 6px;
+}
+/* 字体小图标 */
+.icon{
+    font-family: global-iconfont;
+    font-size: 12px;
+    width: 12px;
+    font-style: normal;
+    float: left;
+    margin-right: 6px;
+    color: #f22e00;
+}
+/* 顶部下拉的二级菜单 */
+.top-under{
+    padding: 8px 0;
+    position: absolute;
+    left: 0;
+    top:35px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    display: none;
+    z-index: 10;
+}
+/* <!-- 网站导航的下拉菜单 的4块区域--> */
+.underAll{
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    padding: 5px;
+    min-height: 258px;
+    border: 1px solid #eee;
+    background: #fff;
+}
+/* <!-- 网站导航的下拉菜单 的4块区域  每块的顶部区域--> */
+.leader-under-top {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+/* 万能清除法 */
+.clear_fix:after {content: '.';display: block;height: 0;clear: both;overflow: hidden; visibility: hidden;}

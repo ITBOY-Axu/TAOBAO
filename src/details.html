@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝网 - 淘！我喜欢</title>
+    <meta name="description"
+        content="淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！">
+    <meta name="keyword"
+        content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖,购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <!-- <link rel="stylesheet" href="css/taobaostyle.css"> -->
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="iconfont/font_1404888168_2057645.woff">
+    <link rel="stylesheet" href="iconfont/font_403341_n8tj33yn5peng66r.woff">
+    <style>
+        @font-face {
+            font-family: global-iconfont;
+            src: url(./iconfont/font_1404888168_2057645.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: iconfont;
+            src: url(./iconfont/font_403341_n8tj33yn5peng66r.woff) format('woff');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <!--登入注册的版心区域 -->
+        <div class="top-mainbox">
+            <!-- 版心区域的左边登入注册部分 -->
+            <ul class="mainbox-left">
+                <li class="leftLocal topLi">
+                    <span class="localName">
+                        中国大陆
+                    </span>
+                    <!-- 地区的下标图标 -->
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+
+
+                    <!-- 需要PHP渲染的下拉地区块 -->
+                    <ul class="localAll">
+                        <li class="localAllActive">中国大陆</li>
+
+
+                    </ul>
+                </li>
+
+
+                <!-- 登入注册部分 -->
+                <li class="register-login topLi">
+                    <a href="javascript:;" class="login">亲，请登入</a>
+                    <a href="javascript:;" class="register">免费注册</a>
+                </li>
+
+                <!-- 顶部的手机逛淘宝 -->
+                <li class="top-shopping topLi">
+                    <a href="javascript:;" class="phone-shop">手机逛淘宝</a>
+                </li>
+            </ul>
+
+            <!-- 顶部的右边部分 -->
+            <ul class="mainbox-right">
+                <!-- 右边的第一个部分  我的淘宝 -->
+                <li class="my topLi ">
+                    <a href="javascript:;" class="myTaobao">我的淘宝</a>
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+                    <!-- /* 我的淘宝下拉框 */  -->
+                    <div class="top-under myTaobao-under">
+                        <a href="javascript:;" class="carTaobao">已买到的宝贝</a>
+                        <a href="javascript:;" class="carTaobao">我的足迹</a>
+                    </div>
+                </li>
+                <!--购物车部分 -->
+                <li class="car topLi">
+                    <!-- /* 购物车iconfont的图片 */ -->
+
+                    <a href="javascript:;" class="carTaobao">
+                        <span class="icon"></span>购物车</a>
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+                </li>
+                <!-- 顶部收藏夹部分 -->
+                <li class="save topLi">
+                    <!-- /* 收藏夹的iconfont的图片 */ -->
+
+                    <a href="javascript:;" class="saveTaobao"> <span class="icon"></span>收藏夹</a>
+
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+                </li>
+                <!-- 商品分类 -->
+                <li class="topLi">
+                    <a href="javascript:;" class="shopitem">商品分类</a>
+                </li>
+                <!-- 商品分类旁边的斜杆 -->
+                <li class="smallLog topLi">|</li>
+                <!-- 千牛卖家中心 -->
+                <li class="topLi">
+                    <a href="javascript:;" class="saleCenter">千牛卖家中心</a>
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+
+                    <!-- 千牛卖家中心的下拉菜单栏 -->
+                    <div class="top-under">
+                        <!-- <a href="javascript:;" class="carTaobao">已买到的宝贝</a>
+                                    <a href="javascript:;" class="carTaobao">我的足迹</a> -->
+                    </div>
+                </li>
+                <!-- 联系客服 -->
+                <li class="topLi">
+                    <a href="javascript:;" class="call">联系客服</a>
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+                    <div class="top-under">
+                        <!-- <a href="javascript:;" class="carTaobao">消费者客服</a>
+                                    <a href="javascript:;" class="carTaobao">我的足迹</a> -->
+                    </div>
+                </li>
+                <!-- 网站导航 -->
+                <li class="topLi">
+                    <a href="javascript:;" class="leader">网站导航</a>
+                    <span class="logBox">
+                        <!-- 小图标 -->
+                        <span class="icon localLog"></span>
+                    </span>
+                    <!-- 网站导航的下拉菜单 -->
+                    <div class="leader-under">
+                        <ul class="underAll">
+                            <li class="leader-under-top">
+                                <h4>
+                                    <!-- 主题市场 -->
+                                </h4>
+                            </li>
+                            <!-- 4块区域 每块区域的主内容部分  需要渲染 -->
+                            <div>
+                                <ul class="leader-main">
+
+                                </ul>
+                            </div>
+                        </ul>
+                        <ul class="underAll">
+
+                        </ul>
+                        <ul class="underAll">
+
+                        </ul>
+                        <ul class="underAll">
+
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 头部下面   全球购的部分 -->
+    <section>
+        <!-- 头部下面   全球购的部分   版心区域 -->
+        <div class="section">
+            <!--  版心区域   左边的图片-->
+            <div class="section-left">
+                <a href="javascript:;">
+                    <img alt="淘宝网logo" src="../src/img/world.png">
+                </a>
+            </div>
+            <!--  版心区域   右边的搜索区域-->
+            <div class="section-right">
+                <form action="">
+                    <!-- 右边的两个button按钮 -->
+                    <div class="right-button">
+                        <button class="button1" type="submit">搜全球购</button>
+                        <button class="button2" type="submit"> 搜淘宝</button>
+                    </div>
+                    <!-- 左边的搜索框 -->
+                    <input type="text" class="search">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 详情页的主要板块   分左中右 3块 -->
+    <div class="banner">
+        <!-- 详情页的主要板块    左边部分-->
+        <div class="banner-left">
+            <!-- 详情页的主要板块    左边部分   上面的图片详情部分-->
+            <div class="bannerLeft-imgs">
+                <!-- 图片里  最大的图片 放大镜用   小放的图 -->
+                <div class="imgs-sf">
+                    <a href="">
+                        <!-- 小放的图片 -->
+                        <img src="../src/img/sf1.jpg" alt="">
+                        <!-- 小放大镜 -->
+                        <div class="sf"></div>
+                    </a>
+                    <!-- 大放的图片 -->
+                    <div class="imgs-gf">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 详情页的主要板块    左边部分   照片详细部分  下面的小图 ul里面好几个小图  需要渲染-->
+            <ul class="bannerLeft-smallimgs">
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+                <li> <img src="../src/img/sf1.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!-- 详情页的主要板块    中间部分-->
+        <div class="banner-middle">
+            <!-- 中间部分的上面      标题 部分 -->
+            <div class="middle-Top">
+                <h3>
+                    <span>代购</span>
+                    Balenciaga 巴黎世家T恤彩虹可乐麦穗BB刺绣字母休闲男女宽松短袖
+                </h3>
+                <p>举报</p>
+            </div>
+            <!-- 中间部分的上面      价格 部分 -->
+            <ul class="price">
+                <li class="price-cancel"> <span>
+                        价格
+                    </span>
+                    <em>￥3890.00</em>
+                </li>
+                <!-- 中间部分的上面      价格 部分    右边的累积评论-->
+                <li class="pinlun">
+                    <div class="pinlun-left"><a href="">
+                            <span class="number">156</span>
+                            <span>累计评论</span>
+                        </a></div>
+                    <div class="pinlun-right">
+                        <a href="">
+                            <span class="number">122</span>
+                            <span>交易成功</span>
+                        </a>
+                    </div>
+                </li>
+                <!-- 中间部分的上面      价格 部分    淘宝目前价格部分-->
+                <li class="taobao-price">
+                    <span class="price-style">淘宝价</span>
+                    <div class="now-price   ">
+                        <!-- 人民币符号 -->
+                        <strong class="tb-promo-price"><em class="tb-rmb">¥</em><em
+                                class="tb-rmb-num">229.00</em></strong><span class="tb-promo-type">淘宝女装价</span>
+                    </div>
+                </li>
+                <!-- 中间部分的上面      价格 部分    优惠部分部分-->
+                <li class=taobao-sell>
+                    <span class="tb-sell-type">优惠</span>
+                    <div class="tb-sell-price">
+                        <i></i>
+                        <span>淘金币可抵4.8元</span>
+                    </div>
+                </li>
+                <!-- 中间部分的上面      价格 部分  配送部分-->
+                <li class="taobao-song">
+                    <span class="tb-sell-type">配送</span>
+                    <!-- 配送地区 -->
+                    <div class="tb-sell-price">
+                        <span>浙江杭州至</span>
+                        <div class="tb-sell-local">
+                            浙江杭州
+                            <ul></ul>
+                        </div>
+                        <span>快递</span>
+                        <div class="tb-sell-kuai">
+                            免运费
+                            <ul></ul>
+                        </div>
+                        <span>48小时内发货</span>
+                    </div>
+                </li>
+            </ul>
+            <!-- 中间部分的上面      下面尺码库存部分 -->
+            <ul class="middle-under">
+                <!-- 尺码部分 -->
+                <li class="size">
+                    <span class="tb-sell-type">尺码</span>
+                    <!-- 尺寸 -->
+                    <ul class="sizeAll">
+                        <li class="sizeAllLi"><a href="">XS</a></li>
+                        <li><a href="">S</a></li>
+                        <li><a href="">M</a></li>
+                        <li><a href="">L</a></li>
+                    </ul>
+                </li>
+                <!-- 颜色部分 -->
+                <li class="color size">
+                    <span class="tb-sell-type">颜色分类</span>
+                    <ul class="sizeAll colorAll">
+                        <li class="colorAllLi">
+                            <a href=""></a>
+                        </li>
+                        <li class="colorAllLi">
+                            <a href=""></a>
+                        </li>
+                        <li class="colorAllLi">
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 商品数量添加部分 -->
+                <li class="Number size">
+                    <span class="tb-sell-type">数量</span>
+                    <div class="sizeAll NumberAll">
+                        <!-- 加减  添加数量 -->
+                        <span> <a href="" class="change">－</a><input type="text" value="1"><a href=""
+                                class="change">＋</a></span>
+                        <em> 件库存（660件）</em>
+
+                    </div>
+                </li>
+                <!-- 中间部分的上面      下面加入购物车 -->
+                <li class="Car size">
+                    <!-- 立即购买 -->
+                    <div class="buy">
+                        <a href="">立即购买</a>
+                    </div>
+                    <!-- 加入购物车 -->
+                    <div class="shopcar">
+                        <a href="">加入购物车</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 详情页的主要板块    右边部分-->
+        <div class="banner-right">
+            <!--    详情页的主要板块    右边部分  上面部分 -->
+            <div class="bannerRight-top">
+                <!-- 上面的金牌卖家部分 -->
+                <a href="" class="Right-toplog">
+                    <img src="../src/img/jinpai.png" alt="">
+                    <img src="../src/img/jinpai2.png" alt="">
+                </a>
+                <!-- 旺旺号店铺内容 -->
+                <div class="Right-topuser">
+                    <!-- 店铺名字 -->
+                    <div class="topusername"><span>陈朵朵 ICEY DUO STUDIO</span> </div>
+                    <!--信誉 -->
+                    <div class="xinyu"><span>信誉:</span>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <!-- 掌柜 -->
+                    <div class="zg"><span>掌柜：fg5456456456</span></div>
+                    <!-- 联系 -->
+                    <div class="calling"><span>联系：</span><a href=""></a></div>
+                    <!-- 描述 -->
+                    <div class="descript">
+                        <ul class="descript-box">
+                            <li>
+                                <span>描述</span>
+                                <a href="">4.9</a>
+                            </li>
+                            <li>
+                                <span>服务</span>
+                                <a href="">4.9</a>
+                            </li>
+                            <li>
+                                <span>物流</span>
+                                <a href="">4.9</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 进入店铺 -->
+                    <div class="store">
+                        <a href="">进入店铺</a>
+                        <a href="">收藏店铺</a>
+                    </div>
+
+                </div>
+            </div>
+            <!--    详情页的主要板块    右边部分  下面部分 -->
+            <div class="bannerRight-under">
+                <div class="Rightunder-top">
+                    <h2>看了又看</h2>
+                    <span></span>
+                </div>
+                <!-- 照片 -->
+                <ul class="Photo">
+                    <li>
+                        <img src="../src/img/shoes.webp" alt="">
+                        <span>￥3890</span>
+                    </li>
+                    <li>
+                        <img src="../src/img/shoes.webp" alt="">
+                        <span>￥3890</span>
+                    </li>
+                    <li>
+                        <img src="../src/img/shoes.webp" alt="">
+                        <span>￥3890</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

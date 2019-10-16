@@ -1,0 +1,625 @@
+/* <!-- 最顶部的登入注册部分 --> */
+header {
+    z-index: 10000;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee
+}
+/* <!--登入注册的版心区域 --> */
+.top-mainbox {
+    margin: 0 auto;
+    width: 1190px;
+    height: 35px;
+    background: #f5f5f5
+}
+/* <!-- 版心区域的左边登入注册部分 --> */
+.leftLocal {
+    z-index: 10002
+}
+
+.localName {
+    float: left;
+    margin-left: 7px;
+    color: #3c3c3c;
+    line-height: 35px;
+    margin-right: 7px
+}
+/* <!-- 地区的下标图标 --> */
+.logBox {
+    display: block;
+    float: left;
+    width: 12px;
+    height: 6px;
+    line-height: 6px;
+    overflow: hidden;
+    margin-top: 16px
+}
+/* <!-- 小图标 --> */
+.localLog {
+    color: #9c9c9c;
+    display: block;
+    margin-top: -4px;
+    margin-right: 20px
+}
+/* <!-- 需要PHP渲染的下拉地区块 --> */
+.localAll {
+    padding: 8px 0;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    border: 1px solid #eee;
+    background: #fff;
+    max-height: 270px;
+    overflow-y: scroll;
+    display: none
+}
+
+header a {
+    float: left;
+    margin-right: 7px;
+    font-size: 12px;
+    color: #6c6c6c;
+    text-decoration: none!important
+}
+
+header a:hover {
+    color: #f22e00
+}
+
+.login {
+    color: #f22e00
+}
+/* <!-- 顶部的右边部分 --> */
+.mainbox-right {
+    float: right
+}
+/* <!-- 右边的第一个部分  我的淘宝 --> */
+.myTaobao-under {
+    width: 80px
+}
+/* <!-- 商品分类旁边的斜杆 --> */
+.smallLog {
+    padding: 0 5px;
+    font-style: normal;
+    color: #ddd
+}
+/* <!-- 网站导航的下拉菜单 --> */
+.leader-under {
+    width: 1190px;
+    position: absolute;
+    top: 35px;
+    left: -1103px;
+    display: none
+}
+
+h4 {
+    color: #f22e00
+}
+/* <!-- 4块区域 每块区域的主内容部分  需要渲染 --> */
+.leader-main li {
+    padding-top: 5px;
+    height: 25px;
+    float: left;
+    overflow: hidden;
+    width: 24%
+}
+
+.leader-main li a {
+    position: relative;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 2px;
+    padding: 0 8px;
+    border-radius: 2px;
+    color: #3c3c3c
+}
+/* <!-- 头部下面   全球购的部分 --> */
+section{
+    background-color: #FFF;
+    width: 100%;
+    padding-top: 10px;
+    min-height: 70px;
+}
+.section{
+    margin: 0 auto;
+    width: 1140px;
+    height: 60px;
+    box-sizing: border-box;
+}
+/* <!--  版心区域   左边的图片--> */
+.section-left{
+    display: inline-block;
+}
+.section-left a{
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.section-left img{
+    height: 38px;
+}
+/*   <!--  版心区域   右边的搜索区域--> */
+.section-right{
+    margin-top: 10px;
+    float: right;
+    width: 427px;
+    position: relative;
+}
+/* <!-- 右边的两个button按钮 --> */
+.right-button{
+    position: relative;
+    float: right;
+    background-color: #fff;
+}
+.right-button button{
+    border: 0;
+    font-size: 12px;
+    float: left;
+    width: 72px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+/* 搜索全球 */
+.button1{
+    background: url(../img/button1.png)no-repeat;
+}
+/* 搜淘宝 */
+.button2{
+    background-color: #f40;
+    border-color: #f40;
+}
+/* <!-- 左边的搜索框 --> */
+.search{
+    width: 272px;
+    height: 24px;
+    float: left;
+    margin: 3px 4px 0 3px;
+    background: url(../img/sprite2.png)-290px -48px no-repeat;
+}
+
+/* <!-- 购物车的版心区 --> */
+.carbanner{
+    min-height: 400px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* <!-- 购物车顶部的全部商品 那块 --> */
+.carbanner-top{
+    overflow: hidden;
+    font-size: 12px;
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+.car-top{
+    overflow: hidden;
+    height: 33px;
+}
+.car-topbox{
+    float: left;
+    font-weight: 700;
+    font-size: 16px;
+    height: 16px;
+    line-height: 1.1;
+    font-family: 'Hiragino Sans GB','Lantinghei SC','Microsoft Yahei',SimSun;
+    text-align: center;
+    padding: 0 0 15px 0;
+    cursor: pointer;
+    margin-left: -1px;
+}
+.car-top  em{
+    color: #f40;
+}
+.box1 a{
+    padding-left: 25px;
+ 
+}
+.box1 a em{
+    color: #3c3c3c;
+}
+.box2 a{
+    padding-left: 25px;
+}
+.box2 a em{
+    color: #3c3c3c;
+}
+
+
+/* <!-- 全部商品的数量 --> */
+.shop-number{
+    color: #f40;
+    font-size: 14px;
+    margin: 0 30px 0 5px;
+    font-weight: 400;
+    font-family: Verdana,Tahoma,arial;
+}
+
+
+/* <!-- 斜杆 --> */
+.Slog{
+    width: 1px;
+    height: 12px;
+    display: inline-block;
+    background: #e8e8e8;
+}
+
+/* <!-- 右边的数量总和 --> */
+.cart-sum{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    line-height: 25px;}
+
+
+    /* <!--  右边的数量总和   价格 --> */
+    .price{
+        font-family: Arial,Verdana;
+        font-weight: 700;
+        margin-right: 5px;
+        color: #f40;
+    }
+    .price em{
+        font-family: Verdana,Arial;
+        padding-left: 2px;
+        font-weight: 700;
+    }
+    .submit-btn{
+        background: #aaa;
+        color: #fff;
+        cursor: not-allowed;
+        display: inline-block;
+        width: 55px;
+        border-radius: 2px;
+        text-align: center;
+    }
+    /* <!-- 顶部下面的那条线 --> */
+    .cartop-line{
+        clear: both;
+        background: #e6e6e6;
+        height: 2px;
+        position: relative;
+    }
+    /* <!-- 选中顶部哪个框 就显示哪条线 --> */
+    .line-show{
+    width: 140px;
+    left: -1px;
+    background: #f40;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    }
+    /* <!-- 购物车的主要部分 --> */
+    .car-main{
+        min-height: 210px;
+    }
+    /* <!-- 购物车的主要部分   头部--> */
+    .car-maintop{
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: #3c3c3c;
+    }
+    /* <!-- 头部的一个个  Item项目 --> */
+    .maintop-item{
+        position: relative;
+    }
+    .maintop-item li{
+        float: left;
+        height: 50px;
+    }
+    /* <!-- 全选的框 --> */
+    .selectall{
+    width: 80px;
+    }
+    .selectall span{
+        margin-left: 20px;
+    }
+    .selectbox{
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    /* <!-- 商品信息的框 --> */
+    .item2{
+        width: 251px;
+        padding-left: 91px;
+    }
+    /* <!-- 商品单价的框 --> */
+    .item3{
+        width: 120px;
+        padding-left: 10px;
+        margin-left: 252px;
+    }
+    /* <!-- 商品数量的框 --> */
+    .item4{
+        width: 120px;
+    }
+    /* <!-- 商品金额的框 --> */
+    .item5{
+        width: 140px;
+    }
+    /*     <!-- 商品操作的框 --> */
+    .item6{
+        width: 96px;
+        padding-left: 30px;
+    }
+    /* <!-- 具体的商品部分 --> */
+    .shopItem{
+        box-sizing: border-box;
+        /* padding-bottom: 15px; */
+    }
+    /* <!-- 商品信息的头部 --> */
+    .shopItem-top{
+        height: 38px;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-bottom: 0;
+    }
+    /*    <!-- 复选框 --> */
+    .shopItem-top input{
+        margin-left: 5px;
+    }
+    /* <!-- 天猫店铺的精灵图 --> */
+    .icon-tianmao{
+        display: inline-block;
+        vertical-align: middle;
+        margin: -3px 6px 0 0;
+        width: 16px;
+        height: 16px;
+        background: url(../img/sp1.png) no-repeat -20px -105px;
+    }
+    /* <!-- 旺旺的图标 --> */
+    .wangwang{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        background:url(../img/sprti2.gif) no-repeat -80px 0;
+    }
+
+
+    /* <!-- 商品信息的底部 --> */
+    .shopItem-under{
+        border: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .shopItem-under li{
+        float: left;
+    }
+    /* <!-- 左边的复选框 --> */
+    .under-checkbox{
+        width: 50px;
+        height: 119px;
+        padding-bottom: 10px;
+    }
+    .under-checkbox input {
+        /* width: 15px;
+        height: 15px;    */
+        margin: 20px 10px 0 20px;
+    }
+    /* <!-- 右边的商品部分 --> */
+    .shopmessage{
+    min-height: 119px;
+    width: 342px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    }
+    /* <!-- 左边的商品图 --> */
+    .message-img{
+        float: left;
+    }
+    .shopmessage img{
+        max-height: 80px;
+        max-width: 80px;
+        vertical-align: middle;
+    }
+    /* <!-- 右边的商品的详情 --> */
+    .messagefont{
+        /* float: left; */
+        min-height: 40px;
+        margin: -3px 0 0 91px;
+        padding-right: 25px;
+    }
+
+    /* <!-- 下面的商品小图标 --> */
+    .message-log{
+        box-sizing: border-box;
+        margin: 26px 0 20px 91px;
+    }
+    /* <!-- 中间的商品   介绍 --> */
+    .shopcenter{
+        float: left;
+        min-height: 119px;
+        width: 212px;
+        padding-right: 40px;
+        overflow: hidden;
+    }
+.shopcenter-font{
+    padding: 16px 0;
+    min-height: 84px;
+    border: 1px dashed transparent;
+    position: relative;
+}
+.shopcenter-font p{
+    margin: 0 5px 0 15px;
+    color: #9c9c9c;
+    overflow: hidden;
+}
+/* <!-- 商品   产品优惠价格 --> */
+.sall-price{
+    min-height: 119px;
+    width: 130px;
+    box-sizing: border-box;
+    padding: 18px 0 0 10px;
+}
+/* <!-- 之前价格 --> */
+.before{
+    padding: 0 0 4px 0;
+    text-decoration: line-through;
+    color: #9c9c9c;
+}
+/*     <!-- 最新价格 --> */
+.now{
+    padding: 0 0 4px 0;
+}
+/* <!-- 商品添加数量的按钮 --> */
+.addnum-but{
+    min-height: 119px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 120px;
+    position: relative;
+}
+.addnum-but a
+{display: block;
+    height: 23px;
+    width: 17px;
+    border: 1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    line-height: 23px;
+    color: #444;
+    position: absolute;
+
+    top: 20px;
+}
+.addnum-but input{
+    width: 39px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #aaa;
+    color: #343434;
+    text-align: center;
+    padding: 4px 0;
+    background-color: #fff;
+    background-position: -75px -375px;
+    position: absolute;
+    z-index: 2;
+    left: 18px;
+    top: 20px;
+}
+.jian{
+    left: 0;
+}
+.jia{
+    right: 42px;
+}
+
+/* <!-- 商品的总价格 --> */
+.priceall{
+    min-height: 119px;
+    width: 140px;
+    color: #f40;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* <!-- 商品的操作部分 --> */
+.shop-delet{
+    min-height: 119px;
+    width: 119px;
+    padding: 20px 0 0 30px;
+}
+.shop-delet a{
+    display: block;
+}
+/* <!-- 底部的操作界面 --> */
+.car-mainUnder{
+    position: relative;
+    height: 50px;
+    background: #e5e5e5;
+    overflow: hidden;
+}
+.car-mainUnder li{
+    float: left;
+}
+/* <!-- 底部分三块   第一块--> */
+.mainUnder-one{
+    margin-top: 16px;
+    /* float: left; */
+}
+/* <!-- 底部分三块   第二块--> */
+.mainUnder-two{
+    line-height: 50px;
+    height: 50px;
+    width: 280px;
+}
+.mainUnder-two a{
+    margin-left: 10px;
+}
+/* <!-- 底部分三块   第三块--> */
+.mainUnder-three{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    padding-left: 20px;
+}
+.mainUnder-three div{
+    cursor: pointer;
+    float: left;
+    height: 48px;
+    color: #3c3c3c;
+    line-height: 48px;
+}
+/* <!-- 已选商品  数量--> */
+.three-num{
+    /* cursor: pointer;
+    float: left;
+    height: 48px;
+    color: #3c3c3c;
+    line-height: 48px; */
+}
+.three-num em{
+    color: #f40;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: tohoma,arial;
+}
+/* <!-- 已选商品的  价格 --> */
+.three-allprice{
+    /* width: 168px;
+    height: 48px;
+    float: left; */
+    margin-left: 30px;
+}
+.three-allprice em{
+    color: #f40;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    font-family: Arial;
+    /* vertical-align: middle; */
+    font-weight: 700;
+}
+
+/* <!-- 结算按钮 --> */
+.buy{
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+}
+.buy a{
+    display: inline-block;
+    background: #B0B0B0;
+    color: #fff;
+    border-left: 1px solid #e7e7e7;
+    width: 119px;
+    cursor: not-allowed;
+    text-align: center; 
+    font-family: 'Lantinghei SC','Microsoft Yahei';
+    font-size: 20px;
+  
+}
