@@ -31,7 +31,7 @@ require(['config'], function () {
                      <ul class="shopItem-under">
                                 <!-- 左边的复选框 -->
                                 <li class="under-checkbox">
-                                    <input type="checkbox">
+                                    <input type="checkbox" class="SelectBox">
                                 </li>
                                 <!-- 右边的商品部分 -->
                                 <li class="shopmessage">
@@ -99,12 +99,33 @@ require(['config'], function () {
                 }
 
                 //  点击删除 移出整个渲染的商品栏目  并且 把cookie清除
-                const delect = $('.delet')
-                delect.on('click', function () {
-                    $.cookie('cookiesid', '', { expires: -1 });
-                    $.cookie('cookienum', '', { expires: -1 });
-                    $(this).parents('.shopItem-under').remove();
+                const delect = $('.delet');
+                $.each(delect, function (index, value) {
+                    $(this).attr('sid', arrsid[index]);
+
+                    $(value).on('click', function () {
+                        //让每个删除按钮  绑定一个对应的sid  
+                        let arrsid = $.cookie('cookiesid').split(',');
+                        let arrnum = $.cookie('cookienum').split(',');
+                        let sid = $(this).attr('sid');
+
+                        // console.log(arrsid);
+                        // console.log(arrnum);
+                        // console.log(($.inArray(sid, arrsid)))
+                        // console.log($.inArray(sid, arrsid))
+                        arrsid.splice(($.inArray(sid, arrsid)), 1);
+                        arrnum.splice(($.inArray(sid, arrsid)), 1);
+                        // console.log(arrsid);
+                        // console.log(arrnum);
+
+                        $.cookie('cookiesid', arrsid, { expires: 7 });
+                        $.cookie('cookienum', arrnum, { expires: 7 });
+
+                        $(this).parents('.shopItem-under').remove();
+                        pricesum();
+                    })
                 })
+
 
                 //判断  结算按钮变色
                 const buybut = $('.buy a');
@@ -113,7 +134,7 @@ require(['config'], function () {
                 //总价格
                 const topallprice = $('.price');
                 const allprice = $('.three-allprice em')
-                //每个p标签的商品价格
+                //每个p标签的商品总价格
                 const everyprice = $('.priceall span')
                 // console.log(everyprice.text());
 
@@ -124,54 +145,123 @@ require(['config'], function () {
                 //商品数量的总和 
                 const allamount = $('.three-num em')
 
-                // console.log(amount)
-                // console.log(allamount)
 
-                let sum = 0;
+                //  顶部上方的所有商品的数量
+                const shopnum = $('.shoppingnumber');
 
-                $.each(everyprice, function (index, value) {
-                    sum += Number($(value).text());
+                //每个商品的单价
+                const oneprice = $('.now span');
 
+
+                //左右两边的加减按钮
+                const jia = $('.jia');
+                const jian = $('.jian');
+
+                // 全选框    
+                const allselect = $('.selectbox');
+
+                //每个input框
+                const select = $('.SelectBox').not('.selectbox');
+
+
+
+
+                // let Num = amount.val();
+                //点击左右边按钮  添加商品数量   并且实现商品价格的计算
+                $.each(jian, function (index, value) {
+
+                    let price = oneprice.eq(index).text()
+                    $(value).on('click', function () {
+                        let Num = amount.eq(index).val();
+                        Num--
+                        if (Num <= 0) {
+                            Num = 0;
+                        }
+                        amount.eq(index).val(Num);
+
+                        //每个商品对应的单价
+                        everyprice.eq(index).text(price * Num);
+
+                        //    console.log(amountsum()) ;
+
+                        pricesum()
+
+
+                    })
                 })
 
+                $.each(jia, function (index, value) {
+                    let price = oneprice.eq(index).text()
+                    $(value).on('click', function () {
+                        let Num = amount.eq(index).val();
+                        Num++
+                        amount.eq(index).val(Num);
+                        everyprice.eq(index).text(price * Num);
 
-                allprice.html('￥' + sum);
-                topallprice.html('￥' + sum);
+
+                        pricesum()
+
+                    })
+                })
+
+                //封装一个求和计算总价格和商品总数的方法
+                //商品数量总和的方法
 
 
-                if (allprice.html != 0) {
-                    buybut.css({ 'cursor': 'pointer', 'background': '#f40' });
-                    buysbut.css({ 'cursor': 'pointer', 'background': '#f40' });
+                //商品价格数量总和的方法
+                function pricesum() {
+                    let Pricesum = 0;
+                    let AllSum = 0;
+                    const everyprice = $('.priceall span');
+                    const amount = $('.amount');
+
+                    $.each(select, function (index, value) {
+
+                        if ($(value).prop('checked')) {
+                            // console.log(everyprice.eq(index).text())
+                            Pricesum += Number(everyprice.eq(index).text());
+                            AllSum += Number(amount.eq(index).val());
+                            buybut.css({ 'cursor': 'pointer', 'background': '#f40' });
+                            buysbut.css({ 'cursor': 'pointer', 'background': '#f40' });
+                        }
+
+
+                    })
+                    allamount.html(AllSum);
+                    shopnum.html(AllSum);
+
+                    allprice.html('￥' + Pricesum);
+                    topallprice.html('￥' + Pricesum);
                 }
-                let num = 0;
-                $.each(amount, function (index, value) {
-                    num += Number($(value).val());
 
+
+
+                //全选框
+
+
+                // console.log(allselect);
+
+                allselect.on('click', function () {
+                    if ($(this).prop('checked')) {
+                        select.prop('checked', true);
+                        allselect.prop('checked', true);
+                    }
+                    else {
+                        select.prop('checked', false);
+                        allselect.prop('checked', false);
+                    }
+                    pricesum();
                 })
 
-                allamount.html(num);
-
-
-                // //加入购物车按钮，添加购物车
-
-                // let sidarr = [];  //存储商品的sid
-                // let numarr = [];  //存放的数量
-
-                // let num = sum.val();
-                // //点击左边按钮  添加商品数量
-                // leftbutton.on('click', function () {
-                //     // console.log(sum.val());
-                //     num--;
-                //     if (num <= 0) {
-                //         num = 0;
-                //     }
-                //     sum.val(num);
-                // })
-                // //点击右边按钮  添加商品数量
-                // rightbutton.on('click', function () {
-                //     num++;
-                //     sum.val(num);
-                // })
+                //单选框
+                select.on('click', function () {
+                    if ($('.SelectBox:checked').not('.selectbox').length === select.length) {
+                        allselect.prop('checked', true);
+                    } else {
+                        allselect.prop('checked', false);
+                    }
+                    pricesum();
+                })
 
 
 

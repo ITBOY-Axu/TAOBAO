@@ -1,11 +1,28 @@
 require(['config'], function () {
-    require(['jquery'], function () {
+    require(['jquery', 'jqcookie'], function () {
         (function () {
             var leftLocal = $('.leftLocal');
             var localAll = $('.localAll');
             var itembig = $('.itembig');
             var leader = $('.leader-under');
             var leadermain = $('.leader-main');
+            let yonghu = $.cookie('youxiang');
+            const login=$('.login');
+            const delet=$('.delet');
+            console.log(yonghu);
+
+             // 显示登入的用户邮箱  
+            if(yonghu!=''){
+                login.html(yonghu);
+                delet.show();
+                delet.on('click',function(){
+                    login.html('亲，请登入');
+                    delet.hide();
+                    $.cookie('youxiang','',{expires: -1});
+                })
+            }
+
+
             // console.log(leftLocal);
             // console.log(localAll);
             // console.log(itembig);
@@ -29,7 +46,7 @@ require(['config'], function () {
                     })
                     // console.log(str);
 
-                  
+
 
                 })
             },
@@ -63,6 +80,9 @@ require(['config'], function () {
 
 
 
+
+
+           
 
 
         })()

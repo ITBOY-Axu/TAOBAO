@@ -106,6 +106,12 @@ header a:hover {
 .login {
     color: #f22e00
 }
+.delet{
+    float: left;
+    color: #f22e00;
+    cursor: pointer;
+    display: none;
+}
 /* <!-- 顶部的右边部分 --> */
 .mainbox-right {
     float: right
@@ -1109,12 +1115,16 @@ h2 {
 }
 .Tab-Box a{
     float: left;
-    width: 51px;
+    width: 40px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+ 
 }
 .coloractive{
   color: #ff7f13;
   font-weight: 800;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #ff7f13;
 }
 
 
@@ -1549,6 +1559,11 @@ h2 {
     overflow: hidden;
     float: left;
 }
+.everyUnder-img img{
+    display: block;
+    width: 180px;
+    height: 180px;
+}
 .everyUnder-imgRight{
     width: 89px;
     float: left;
@@ -1699,6 +1714,7 @@ h2 {
     border: 1px solid #f4f4f4;
     margin: -1px 0 0 -1px;
 }
+
 /* 每个商品里的图片 */
 .hotimg{
     display: block;
@@ -1707,6 +1723,11 @@ h2 {
     text-align: center;
     font-size: 0;
     position: relative;
+}
+.hotimg img{
+    display: block;
+    width: 200px;
+    height: 200px;
 }
 /* 每个商品的价格 */
 .hotline{
